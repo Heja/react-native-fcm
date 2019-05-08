@@ -19,7 +19,7 @@ repositories {
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation 'com.facebook.react:react-native:+'
-    implementation 'com.google.firebase:firebase-core:+'
+    implementation 'com.google.firebase:firebase-core:16.0.6'
     implementation ("com.google.firebase:firebase-messaging:17.5.0"){
         exclude group: 'com.google.firebase', module: 'firebase-iid'
     }
