@@ -23,6 +23,7 @@ dependencies {
     implementation ("com.google.firebase:firebase-messaging:17.5.0"){
         exclude group: 'com.google.firebase', module: 'firebase-iid'
     }
+    implementation 'com.google.firebase:firebase-iid:17.1.2'
     implementation 'me.leolin:ShortcutBadger:1.1.17@aar'
 }
 
