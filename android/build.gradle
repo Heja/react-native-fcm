@@ -17,10 +17,12 @@ repositories {
 }
 
 dependencies {
-    compile fileTree(include: ['*.jar'], dir: 'libs')
-    compile 'com.facebook.react:react-native:+'
-    compile 'com.google.firebase:firebase-core:+'
-    compile 'com.google.firebase:firebase-messaging:17.5.0'
-    compile 'me.leolin:ShortcutBadger:1.1.17@aar'
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.facebook.react:react-native:+'
+    implementation 'com.google.firebase:firebase-core:+'
+    implementation ("com.google.firebase:firebase-messaging:17.5.0"){
+        exclude group: 'com.google.firebase', module: 'firebase-iid'
+    }
+    implementation 'me.leolin:ShortcutBadger:1.1.17@aar'
 }
 
